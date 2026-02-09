@@ -4,9 +4,11 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { clsx } from 'clsx';
 
-// Only one project now
-const projects = [
-  { name: 'The Gone Girls', slug: 'gone-girls' },
+const magazineSections = [
+  { name: 'Introduction', href: '/projects/introduction' },
+  { name: 'Methodology', href: '/projects/methodology' },
+  { name: 'Visual Narrative', href: '/projects/visual-narrative' },
+  { name: 'Summary', href: '/projects/summary' },
 ];
 
 export default function Sidebar() {
@@ -14,20 +16,21 @@ export default function Sidebar() {
 
   return (
     <div className="p-6 h-full flex flex-col">
-      <h1 className="text-xl font-bold tracking-tight mb-8">Research Portfolio</h1>
+      <h1 className="text-xl font-bold tracking-tight mb-8">The Gone Girls</h1>
       <nav className="space-y-2">
-        {projects.map((p) => (
+        {magazineSections.map((section) => (
           <Link
-            key={p.slug}
-            href={`/projects/${p.slug}`}
+            key={section.href}
+            href={section.href}
             className={clsx(
               "block px-4 py-2 rounded-lg text-sm font-medium transition-colors",
-              pathname.includes(p.slug)
+              // 匹配当前激活的页面
+              pathname === section.href
                 ? "bg-blue-50 text-blue-700"
                 : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
             )}
           >
-            {p.name}
+            {section.name}
           </Link>
         ))}
       </nav>
