@@ -10,10 +10,9 @@ export default function ProjectLayout({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
-  const params = useParams();
-  const slug = params.slug as string;
   
-  const baseUrl = `/projects/${slug}`;
+  // 直接设置固定基础路径，不要再使用 params.slug
+  const baseUrl = '/projects'; 
 
   const tabs = [
     { name: 'Introduction', path: `${baseUrl}/introduction` },
