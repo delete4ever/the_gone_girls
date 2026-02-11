@@ -44,8 +44,8 @@ export default function SummaryPage() {
 
           {/* --- CHART: Trend --- */}
           <FadeIn delay={0.2}>
-            <div className="w-full max-w-[1400px] mx-auto my-12 border border-stone-200 rounded-xl overflow-hidden shadow-sm bg-white">
-              <div className="w-full h-[500px] md:h-[600px]">
+            <div className="w-full max-w-full mx-auto my-12 border border-stone-200 rounded-xl overflow-hidden shadow-sm bg-white">
+              <div className="w-full h-[500px] md:h-[700px]"> 
                 <NotebookFrame 
                   src="/notebooks/trend.html" 
                   title="National Sex Ratio Trend" 
