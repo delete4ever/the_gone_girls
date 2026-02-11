@@ -55,59 +55,72 @@ export default function SummaryPage() {
 
 
           <FadeIn>
-            <div className="prose prose-lg prose-slate max-w-3xl mx-auto text-slate-700 space-y-8">
-              <p>
-                This line chart tracks China's national sex ratio at birth across 52 years, with horizontal reference lines marking the biological norm (102-107 boys per 100 girls).
-              </p>
-              <h4 className="text-lg font-bold text-slate-900">Key Observations:</h4>
-              <ul className="list-disc pl-5 space-y-2 marker:text-rose-700">
-                <li>
-                  <strong>1970-1982: Biological baseline.</strong> SRB hovers at 106-107, within normal range.Despite social upheaval and early economic reforms, sex ratios remain naturally balanced.
-                </li>
-                <li>
-                  <strong>1982-2008: Systematic escalation.</strong> Sharp, continuous climb from 108 (1982) to the peak of 121 (2004-2008). Acceleration notably begins around 1985, coinciding with the diffusion of ultrasound technology diffusion. At peak (121), approximately 54.7% of births are male vs. the natural 51.2%—translating to ~600,000 missing girls per year.
-                </li>
-                <li>
-                  <strong>Policy annotations reveal correlations.</strong> 
-                  <ul>
-                    <li>
-                      1.5-child policy launch & B-ultrasound widespread (1980s): SRB begins rising from 108 to 111
-                    </li>
-                    <li>
-                       One-child policy fully implemented (1990s): Steepest climb period, reaching 114 by 1995, 118 by 2000
-                    </li>
-                    <li>
-                      Two-child policy fully implemented (2016): Decline accelerates from 115 to 111
-                    </li>
-                    <li>
-                      Three-child policy opened (2021): SRB drops to 108-111 range
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <strong>2008-Present: The correction.</strong> Sustained decline from 121 (2008) to approximately 111 (2022). Improvement driven by: policy relaxation, stricter enforcement of sex determination bans, marriage squeeze becoming socially visible, and gradual cultural evolution. However, 111 still exceeds the biological norm—imbalance persists at a reduced level.
-                </li>
-                <li>
-                  <strong>Why the reversal?</strong> Multiple factors converged:
-                  <ul>
-                    <li>
-                      Reduced birth pressure: With two or three children allowed, each birth is no longer all-or-nothing
-                    </li>
-                    <li>
-                      Stricter enforcement: Crackdowns on illegal sex determination became more serious, with actual penalties
-                    </li>
-                    <li>
-                      Social awareness: The marriage squeeze became undeniable—reports of millions of unmarried men sparked concern
-                    </li>
-                    <li>
-                      Cultural evolution: Rising education, urbanization, and women's labor force participation gradually eroded son preference (though incompletely)
-                    </li>
-                    <li>
-                      Technology monitoring: Hospital ultrasound equipment is increasingly logged and tracked, making illegal use harder
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+           {/* --- CHAPTER 1: TIMELINE ANALYSIS --- */}
+            <div className="max-w-3xl mx-auto py-12 px-4">
+              <h3 className="text-2xl font-bold text-slate-900 mb-10 flex items-center">
+                <span className="bg-rose-500 w-2 h-8 mr-4 rounded-full"></span>
+                Key Observations: The 50-Year Trajectory
+              </h3>
+
+              <div className="relative border-l-2 border-slate-200 ml-4 space-y-12">
+                
+                {/* Phase 1: Stability */}
+                <div className="relative pl-8">
+                  <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-emerald-500 border-4 border-white shadow-sm"></div>
+                  <span className="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold uppercase mb-2">
+                    1970 - 1982
+                  </span>
+                  <h4 className="text-xl font-bold text-slate-800 mb-2">Biological Baseline</h4>
+                  <p className="text-slate-600 leading-relaxed">
+                    Despite social upheaval, SRB hovers at <span className="font-semibold text-slate-900 text-lg">106-107</span>. The natural balance remains intact.
+                  </p>
+                </div>
+
+                {/* Phase 2: Escalation */}
+                <div className="relative pl-8">
+                  <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-rose-500 border-4 border-white shadow-sm"></div>
+                  <span className="inline-block px-3 py-1 rounded-full bg-rose-100 text-rose-700 text-xs font-bold uppercase mb-2">
+                    1982 - 2008
+                  </span>
+                  <h4 className="text-xl font-bold text-slate-800 mb-2 text-rose-700">Systematic Escalation</h4>
+                  <p className="text-slate-600 leading-relaxed mb-4">
+                    A sharp climb to a peak of <span className="font-semibold text-rose-600 text-lg">121</span>. This period marks the diffusion of ultrasound technology.
+                  </p>
+                  
+                  {/* Policy Callout - 嵌套的小卡片 */}
+                  <div className="bg-slate-50 rounded-lg p-4 border border-slate-200 text-sm">
+                    <p className="font-bold text-slate-700 mb-2">Policy & Tech Milestones:</p>
+                    <ul className="space-y-2 text-slate-600">
+                      <li>• <span className="font-medium">1980s:</span> 1.5-child policy & Ultrasound spread (SRB 108 → 111)</li>
+                      <li>• <span className="font-medium">1990s:</span> Full One-child policy implementation (SRB → 118)</li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Phase 3: Correction */}
+                <div className="relative pl-8">
+                  <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-blue-500 border-4 border-white shadow-sm"></div>
+                  <span className="inline-block px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase mb-2">
+                    2008 - Present
+                  </span>
+                  <h4 className="text-xl font-bold text-slate-800 mb-2">The Correction Phase</h4>
+                  <p className="text-slate-600 leading-relaxed mb-4">
+                    Sustained decline to approximately <span className="font-semibold text-blue-600 text-lg">111</span>. Driven by policy relaxation and social awareness.
+                  </p>
+                  
+                  {/* 底部高亮总结 */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                    <div className="p-3 bg-white border border-blue-100 rounded shadow-sm">
+                      <p className="text-xs text-slate-400 uppercase font-bold">Driver 1</p>
+                      <p className="text-sm font-medium text-slate-700">Stricter enforcement of sex-determination bans.</p>
+                    </div>
+                    <div className="p-3 bg-white border border-blue-100 rounded shadow-sm">
+                      <p className="text-xs text-slate-400 uppercase font-bold">Driver 2</p>
+                      <p className="text-sm font-medium text-slate-700">Cultural evolution & Women’s labor participation.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </FadeIn>
         </section>
