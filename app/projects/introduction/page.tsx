@@ -15,8 +15,8 @@ export default function SummaryPage() {
               A Family Story
             </h1>
             
-            <div className="prose prose-lg prose-slate text-slate-700 leading-relaxed">
-              
+            <div className="prose prose-lg prose-slate text-slate-700 leading-relaxed space-y-8">
+          
               <p>
                 It was 2004, and my uncle's wife was pregnant with their first child. In a small clinic in our hometown, she underwent an ultrasound examination—a routine medical procedure that, in China, carries an illegal second purpose. A doctor they knew whispered the result: a girl.
               </p>
@@ -43,13 +43,13 @@ export default function SummaryPage() {
               </div>
               <figcaption className="max-w-xl mx-auto mt-4 p-4 bg-white border-l-4 border-rose-700 text-sm text-slate-600 shadow-sm rounded-r-lg text-left">
                 <strong className="block text-slate-900 mb-1">Propaganda from the Early 2000s</strong>
-                This slogan, “Boys and girls are equally good — daughters are also carriers of the family line,” reflects government efforts to challenge traditional son-preference.
+                This slogan, “Boys and girls are equally good — daughters are also carriers of the family line,” is a piece of social propaganda commonly painted on walls in China in the early 21st century. It reflects government efforts to challenge traditional son-preference culture by promoting the idea that girls are just as valuable as boys and can equally continue the family lineage. Such slogans were part of broader public messaging campaigns aimed at reshaping long-standing gender norms in rural and urban communities.
               </figcaption>
             </figure>
           </FadeIn>
 
           <FadeIn>
-            <div className="prose prose-lg prose-slate text-slate-700 leading-relaxed">
+            <div className="prose prose-lg prose-slate text-slate-700 leading-relaxed space-y-8">
               {/* From Family to Nation */}
               <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6">From Family to Nation</h2>
               <p>
@@ -65,7 +65,7 @@ export default function SummaryPage() {
           </FadeIn>
 
           <FadeIn>
-            <div className="prose prose-lg prose-slate text-slate-700 leading-relaxed">
+            <div className="prose prose-lg prose-slate text-slate-700 leading-relaxed space-y-8">
               {/* Research Motivation */}
               <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6">Research Motivation</h2>
               <p>

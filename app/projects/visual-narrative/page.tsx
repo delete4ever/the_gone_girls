@@ -30,7 +30,7 @@ export default function SummaryPage() {
               <h3 className="text-xl font-medium text-slate-500 italic mb-6">
                 "From Balance to Crisis: Four Decades of Demographic Distortion"
               </h3>
-              
+              <div className="prose prose-lg prose-slate text-slate-700 leading-relaxed space-y-8">
               <p>
                 When my grandfather feared that "the Yang family line would end" with the birth of a granddaughter, he expressed a concern shared by millions of Chinese families nationwide. But his individual anxiety, when multiplied across an entire nation, created something unprecedented in human history: a systematic demographic imbalance that would reshape Chinese society for generations.
               </p>
@@ -38,6 +38,7 @@ export default function SummaryPage() {
               <p>
                 This visualization maps how that transformation happened—not through abstract policy analysis, but through the actual numbers: the sex ratios recorded at every birth, tracked across every year, revealing the moment when China's demographic balance tipped into crisis.
               </p>
+              </div>
             </div>
           </FadeIn>
 
@@ -54,7 +55,7 @@ export default function SummaryPage() {
 
 
           <FadeIn>
-            <div className="prose prose-lg prose-slate max-w-3xl mx-auto text-slate-700">
+            <div className="prose prose-lg prose-slate max-w-3xl mx-auto text-slate-700 space-y-8">
               <p>
                 This line chart tracks China's national sex ratio at birth across 52 years, with horizontal reference lines marking the biological norm (102-107 boys per 100 girls).
               </p>
@@ -122,6 +123,7 @@ export default function SummaryPage() {
               <h3 className="text-xl font-medium text-slate-500 italic mb-6">
                 "Not All Regions Are Equal: Mapping the Crisis Across China's Provinces"
               </h3>
+              <div className="prose prose-lg prose-slate text-slate-700 leading-relaxed space-y-8">
               <p>
                 When my grandfather raged about the Yang family line potentially ending, he was standing in Hubei Province, in central-south China. But what if our family had lived in Tibet? Or Xinjiang? Or the Northeast? Would his reaction have been the same?
               </p>
@@ -133,6 +135,7 @@ export default function SummaryPage() {
               <p>
                 This chapter visualizes geography—showing not only which provinces had the worst imbalances, but also how the crisis emerged, spread, peaked, and persisted across space and time.
               </p>
+              </div>
             </div>
           </FadeIn>
         </section>
@@ -416,6 +419,7 @@ export default function SummaryPage() {
               <h3 className="text-xl font-medium text-slate-500 italic mb-6">
                 "Why Geography Mattered: Culture, Wealth, and the Price of Sons"
               </h3>
+              <div className="prose prose-lg prose-slate text-slate-700 leading-relaxed space-y-8">
               <p>
                 My grandfather's fury about the Yang family line ending wasn't a personal quirk—it was the expression of a cultural system that had shaped our family for generations. The Yang family genealogy book (族谱), carefully maintained and updated, traced our patrilineal descent through centuries. Our ancestral graves required male descendants to perform ritual worship. Our family property would pass through the male line.
               </p>
@@ -427,6 +431,7 @@ export default function SummaryPage() {
               <p>
                 This chapter examines the paradoxes: why wealthy regions showed severe imbalances, how traditional culture proved more potent than economic incentives, and how we can measure and visualize the consequences of this cultural persistence.
               </p>
+              </div>
             </div>
           </FadeIn>
         </section>
@@ -739,6 +744,7 @@ export default function SummaryPage() {
               <h3 className="text-xl font-medium text-slate-500 italic mb-6">
                 "Selecting Until Success: The Birth Order Pattern"
               </h3>
+              <div className="prose prose-lg prose-slate text-slate-700 leading-relaxed space-y-8">
               <p>
                 My uncle's family had a daughter in 2010. For six years, they attempted to conceive a second child. When my aunt finally got pregnant again, I don't know for sure whether they used an ultrasound for sex determination—but when she gave birth to a son, the family's relief was palpable. They had achieved what they needed: at least one son.
               </p>
@@ -751,6 +757,7 @@ export default function SummaryPage() {
               <p>
                 Below is an animated choropleth map cycling through five birth orders. The interactive slider allows manual selection. Color intensity represents SRB at each parity level.
               </p>
+              </div>
             </div>
           </FadeIn>
 

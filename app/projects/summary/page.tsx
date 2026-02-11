@@ -127,7 +127,7 @@ export default function SummaryPage() {
           {/* --- SECTION 4: FINAL THOUGHT --- */}
           <FadeIn delay={0.8}>
             <div className="prose prose-lg prose-slate max-w-3xl mx-auto pb-24 text-slate-800 leading-relaxed border-t border-slate-200 pt-12">
-              <div className="prose prose-lg prose-slate max-w-3xl mx-auto prose-p:my-10">
+              <div className="prose prose-lg prose-slate max-w-3xl mx-auto prose-p:my-10 space-y-8">
               <h3 className="text-2xl font-bold text-slate-900 mb-6">Final Thought</h3>
               <p>
                 This project began with a family story—my grandfather's rage, my cousin's silence. Through data visualization, I've shown how that personal story connects to national patterns, how individual families' decisions aggregate into demographic catastrophe, and how the consequences of sex selection persist across decades.
