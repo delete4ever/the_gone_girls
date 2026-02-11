@@ -49,7 +49,6 @@ export default function SummaryPage() {
                 <NotebookFrame 
                   src="/notebooks/trend.html" 
                   title="National Sex Ratio Trend" 
-                  className="w-full h-full border-none" 
                 />
               </div>
             </div>
