@@ -259,57 +259,79 @@ export default function SummaryPage() {
 
         {/* --- ANALYSIS: Key Observations by Frame --- */}
           <FadeIn delay={0.4}> {/* */}
-            <div className="prose prose-lg prose-slate max-w-3xl mx-auto text-slate-700 mb-12"> {/* */}
-              <h3 className="text-xl font-bold text-slate-900 mb-6">Key Observations by Frame:</h3> {/* */}
+            {/* --- CHAPTER 2.2: SPATIAL EVOLUTION TIMELINE --- */}
+            <div className="max-w-3xl mx-auto py-12 px-4">
+              <h3 className="text-2xl font-bold text-slate-900 mb-10 flex items-center">
+                <span className="bg-amber-500 w-2 h-8 mr-4 rounded-full"></span>
+                Spatial Evolution: The Crisis Wave
+              </h3>
 
-              <div className="space-y-10">
-                {/* 1982 */}
-                <div>
-                  <p className="font-bold text-slate-800 mb-2 text-lg">1982 - The calm before:</p> {/* */}
-                  <ul className="list-disc pl-5 space-y-2">
-                    <li>Map appears predominantly light peach/pale orange—most provinces 105-109</li>
-                    <li>Only slight elevation visible in Anhui, Henan, Jiangxi (109-110)</li>
-                    <li>Geographic pattern not yet established</li>
-                  </ul>
+              <div className="relative border-l-2 border-slate-200 ml-4 space-y-12">
+                
+                {/* 1982: The Calm */}
+                <div className="relative pl-8">
+                  <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-orange-200 border-4 border-white shadow-sm"></div>
+                  <span className="inline-block px-3 py-1 rounded-full bg-orange-50 text-orange-700 text-xs font-bold uppercase mb-2">
+                    1982
+                  </span>
+                  <h4 className="text-xl font-bold text-slate-800 mb-2 italic">The Calm Before</h4>
+                  <div className="text-slate-600 leading-relaxed space-y-2 text-sm">
+                    <p>• Map appears predominantly <span className="font-semibold text-orange-600">light peach/pale orange</span>—most provinces at 105-109.</p>
+                    <p>• Only slight elevation in Anhui, Henan, Jiangxi (109-110). Geographic pattern not yet established.</p>
+                  </div>
                 </div>
 
-                {/* 1990 */}
-                <div>
-                  <p className="font-bold text-slate-800 mb-2 text-lg">1990 - Pattern crystallizes:</p> {/* */}
-                  <ul className="list-disc pl-5 space-y-2">
-                    <li>
-                      <strong>A distinct "crisis arc" emerges:</strong> Darkening visible from Shaanxi (northwest) through central provinces (Henan, Anhui, Hubei, Hunan) to the eastern coast (Jiangsu, Zhejiang, Fujian, Jiangxi) down to Guangdong
-                    </li>
-                    <li>This arc follows the traditional Han Chinese heartland</li>
-                    <li>
-                      <strong>Periphery stays light:</strong> Northeast (Liaoning, Jilin, Heilongjiang) shows only modest elevation; Far west (Tibet, Xinjiang, Qinghai) remains near-normal; Southwest (Yunnan, Guizhou) moderate
-                    </li>
-                  </ul>
+                {/* 1990: Crystallization */}
+                <div className="relative pl-8">
+                  <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-orange-500 border-4 border-white shadow-sm"></div>
+                  <span className="inline-block px-3 py-1 rounded-full bg-orange-100 text-orange-800 text-xs font-bold uppercase mb-2">
+                    1990
+                  </span>
+                  <h4 className="text-xl font-bold text-slate-800 mb-2">Pattern Crystallizes</h4>
+                  <div className="text-slate-600 leading-relaxed space-y-3">
+                    <p className="bg-orange-50 p-3 rounded-lg border-l-4 border-orange-400 text-sm">
+                      <span className="font-bold text-orange-900 text-base">A distinct "crisis arc" emerges:</span> Darkening visible from Shaanxi through the central heartland (Henan, Anhui, Hubei) down to Guangdong.
+                    </p>
+                    <ul className="text-sm space-y-1 pl-2">
+                      <li>• <span className="font-medium text-slate-800 italic text-sm">Periphery stays light:</span> Northeast and Far West remain near-normal or moderate.</li>
+                    </ul>
+                  </div>
                 </div>
 
-                {/* 2000-2005 */}
-                <div>
-                  <p className="font-bold text-slate-800 mb-2 text-lg">2000-2005 - Maximum darkness:</p> {/* */}
-                  <ul className="list-disc pl-5 space-y-2">
-                    <li>Central and eastern provinces turn deep red/purple</li>
-                    <li><strong>Anhui and Jiangxi are nearly black (SRB ~128-130)</strong></li>
-                    <li><strong>The Henan-Hubei-Hunan triangle</strong> forms a visible dark cluster</li>
-                    <li>
-                      <strong>Coastal wealthy provinces are also dark:</strong> Guangdong, Fujian, Zhejiang (120-125), despite economic development
-                    </li>
-                    <li><strong>Shaanxi remainsa dark anchor in the northwest</strong></li>
-                  </ul>
+                {/* 2000-2005: Maximum Darkness */}
+                <div className="relative pl-8">
+                  <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-rose-700 border-4 border-white shadow-sm"></div>
+                  <span className="inline-block px-3 py-1 rounded-full bg-rose-100 text-rose-700 text-xs font-bold uppercase mb-2">
+                    2000 - 2005
+                  </span>
+                  <h4 className="text-xl font-bold text-rose-900 mb-2">Maximum Darkness</h4>
+                  <div className="text-slate-700 leading-relaxed space-y-3">
+                    <p className="text-sm italic">Central and eastern provinces turn <span className="font-bold text-rose-700">deep red/purple</span>.</p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                      <div className="p-3 bg-rose-50 border border-rose-100 rounded-lg text-sm">
+                        <p className="font-bold text-rose-800 uppercase text-[10px] mb-1">Hotspots</p>
+                        <p>Anhui & Jiangxi are <span className="font-bold">nearly black</span> (SRB ~128-130). The Henan-Hubei-Hunan triangle forms a dark cluster.</p>
+                      </div>
+                      <div className="p-3 bg-rose-50 border border-rose-100 rounded-lg text-sm">
+                        <p className="font-bold text-rose-800 uppercase text-[10px] mb-1">Wealthy Coast</p>
+                        <p>Guangdong, Fujian, Zhejiang also turn dark (120-125) despite economic development.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                {/* 2010-2020 */}
-                <div>
-                  <p className="font-bold text-slate-800 mb-2 text-lg">2010-2020 - Gradual fade:</p> {/* */}
-                  <ul className="list-disc pl-5 space-y-2">
-                    <li>Colors lighten across the board, but the <strong>relative pattern persists</strong></li>
-                    <li>Anhui, Henan, Jiangxi remain darker orange (112-115) while Tibet, Xinjiang stay light blue (105-107)</li>
-                    <li>Crisis receding, but geographic signature unchanged</li>
-                  </ul>
+                {/* 2010-2020: Fade */}
+                <div className="relative pl-8">
+                  <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-sky-500 border-4 border-white shadow-sm"></div>
+                  <span className="inline-block px-3 py-1 rounded-full bg-sky-100 text-sky-700 text-xs font-bold uppercase mb-2">
+                    2010 - 2020
+                  </span>
+                  <h4 className="text-xl font-bold text-slate-800 mb-2">Gradual Fade</h4>
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    Colors lighten across the board, but the <span className="font-semibold text-slate-900">geographic signature remains unchanged</span>. Anhui and Henan remain darker orange, while the periphery stays light blue.
+                  </p>
                 </div>
+
               </div>
             </div>
           </FadeIn>
