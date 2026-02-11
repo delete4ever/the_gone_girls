@@ -8,6 +8,7 @@ export default function SummaryPage() {
       <div className="max-w-7xl mx-auto py-16 px-4 lg:px-8">
         
         <div className="max-w-3xl mx-auto pb-24">
+          <div className="prose prose-lg prose-slate max-w-3xl mx-auto space-y-8">
           
           <FadeIn>
             <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-10 leading-tight tracking-tight">
@@ -109,6 +110,7 @@ export default function SummaryPage() {
 
         </div>
       </div>
+    </div>
     </div>
   );
 }

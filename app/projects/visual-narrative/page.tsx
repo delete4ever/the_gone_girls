@@ -19,6 +19,7 @@ export default function SummaryPage() {
           </FadeIn>
         </header>
 
+      <div className="prose prose-lg prose-slate max-w-3xl mx-auto space-y-8">
         {/* --- CHAPTER 1 --- */}
         <section id="chapter-1" className="w-full flex flex-col items-center">
           <FadeIn>
@@ -47,14 +48,12 @@ export default function SummaryPage() {
             </div>
           </FadeIn>
 
-          <FadeIn>
-            <p>
-              This line chart tracks China's national sex ratio at birth across 52 years, with horizontal reference lines marking the biological norm (102-107 boys per 100 girls).
-            </p>
-          </FadeIn>
 
           <FadeIn>
             <div className="prose prose-lg prose-slate max-w-3xl mx-auto text-slate-700">
+              <p>
+                This line chart tracks China's national sex ratio at birth across 52 years, with horizontal reference lines marking the biological norm (102-107 boys per 100 girls).
+              </p>
               <h4 className="text-lg font-bold text-slate-900">Key Observations:</h4>
               <ul className="list-disc pl-5 space-y-2 marker:text-rose-700">
                 <li>
@@ -213,32 +212,6 @@ export default function SummaryPage() {
               </p>
             </div>
           </FadeIn>
-
-          {/* --- ANALYSIS: Spatial Insights --- */}
-          <FadeIn delay={0.5}>
-            <div className="prose prose-lg prose-slate max-w-3xl mx-auto text-slate-700 mb-12">
-              <div className="border-l-4 border-rose-700 pl-4 bg-rose-50 p-6 rounded mt-6 text-slate-800">
-                <p className="text-xl font-bold mb-4">Spatial Insights:</p>
-                
-                <p className="italic mb-4">
-                  The crisis wasn't diffuse—it concentrated in a specific <strong>geographic corridor</strong>:
-                </p>
-                
-                <ul className="list-disc pl-6 space-y-2 mb-4 italic">
-                  <li>
-                    <strong>Coincides with:</strong> Dense Han Chinese population, traditional agricultural regions, historical cultural centers
-                  </li>
-                  <li>
-                    <strong>Avoids:</strong> Ethnic minority regions (Tibet, Xinjiang, Inner Mongolia western), Frontier areas (Northeast), Some southwestern provinces (Yunnan, Guizhou)
-                  </li>
-                </ul>
-                
-                <p className="italic font-medium">
-                  This suggests that <strong>cultural geography</strong>, rather than a uniform national culture, drove the crisis.
-                </p>
-              </div>
-            </div>
-          </FadeIn>
         </section>
 
         {/* --- CHAPTER 2.2 --- */}
@@ -315,6 +288,32 @@ export default function SummaryPage() {
                     <li>Crisis receding, but geographic signature unchanged</li>
                   </ul>
                 </div>
+              </div>
+            </div>
+          </FadeIn>
+
+            {/* --- ANALYSIS: Spatial Insights --- */}
+          <FadeIn delay={0.5}>
+            <div className="prose prose-lg prose-slate max-w-3xl mx-auto text-slate-700 mb-12">
+              <div className="border-l-4 border-rose-700 pl-4 bg-rose-50 p-6 rounded mt-6 text-slate-800">
+                <p className="text-xl font-bold mb-4">Spatial Insights:</p>
+                
+                <p className="italic mb-4">
+                  The crisis wasn't diffuse—it concentrated in a specific <strong>geographic corridor</strong>:
+                </p>
+                
+                <ul className="list-disc pl-6 space-y-2 mb-4 italic">
+                  <li>
+                    <strong>Coincides with:</strong> Dense Han Chinese population, traditional agricultural regions, historical cultural centers
+                  </li>
+                  <li>
+                    <strong>Avoids:</strong> Ethnic minority regions (Tibet, Xinjiang, Inner Mongolia western), Frontier areas (Northeast), Some southwestern provinces (Yunnan, Guizhou)
+                  </li>
+                </ul>
+                
+                <p className="italic font-medium">
+                  This suggests that <strong>cultural geography</strong>, rather than a uniform national culture, drove the crisis.
+                </p>
               </div>
             </div>
           </FadeIn>
@@ -820,6 +819,7 @@ export default function SummaryPage() {
           </FadeIn>
         </section>
       </div>
+    </div>
     </div>
   );
 }
