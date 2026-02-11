@@ -737,8 +737,6 @@ export default function SummaryPage() {
                   </div>
                 </div>
 
-              </div>
-            </div>
 
               {/* Summary Insight Box */}
               <div className="border-l-4 border-rose-700 pl-4 bg-rose-50 p-6 rounded mt-12 text-slate-800">
