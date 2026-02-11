@@ -48,28 +48,41 @@ export default function SummaryPage() {
             <div className="prose prose-lg prose-slate max-w-3xl mx-auto mb-20">
               <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
                 <h3 className="text-2xl font-bold text-slate-900 mt-0 mb-6">The Enduring Consequences</h3>
-                <p className="mb-6">China now lives with the demographic legacy:</p>
-                <ul className="space-y-4">
-                  <li className="flex items-start">
-                    <span className="text-rose-600 mr-3">•</span>
-                    <strong>Approximately 30-40 million "surplus men"</strong> in cohorts born 1985-2010, creating a severe marriage squeeze
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-rose-600 mr-3">•</span>
-                    <strong>Rising bride prices</strong> as scarce women command higher marriage payments, particularly in rural areas
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-rose-600 mr-3">•</span>
-                    <strong>Cross-border marriage migration</strong> as Chinese men seek brides from Vietnam, Myanmar, Laos—sometimes through trafficking
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-rose-600 mr-3">•</span>
-                    <strong>Delayed and foregone marriage</strong> as millions of men, inferior and rural, face permanent bachelorhood
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-rose-600 mr-3">•</span>
-                    <strong>Social stability concerns</strong> around large populations of unmarried men (the "bare branches" phenomenon)
-                  </li>
+                <p className="mb-10 text-slate-600 leading-relaxed">China now lives with the demographic legacy:</p>
+                
+            
+                <ul className="space-y-10 list-none pl-0">
+                  {[
+                    { 
+                      label: 'Approximately 30-40 million "surplus men"', 
+                      desc: "in cohorts born 1985-2010, creating a severe marriage squeeze" 
+                    },
+                    { 
+                      label: "Rising bride prices", 
+                      desc: "as scarce women command higher marriage payments, particularly in rural areas" 
+                    },
+                    { 
+                      label: "Cross-border marriage migration", 
+                      desc: "as Chinese men seek brides from Vietnam, Myanmar, Laos—sometimes through trafficking" 
+                    },
+                    { 
+                      label: "Delayed and foregone marriage", 
+                      desc: "as millions of men, inferior and rural, face permanent bachelorhood" 
+                    },
+                    { 
+                      label: "Social stability concerns", 
+                      desc: 'around large populations of unmarried men (the "bare branches" phenomenon)' 
+                    }
+                  ].map((item, i) => (
+                    <li key={i} className="flex flex-col border-l-4 border-rose-100 pl-5 hover:border-rose-300 transition-colors">                  
+                      <strong className="text-slate-900 text-xl mb-1 leading-tight tracking-tight">
+                        {item.label}
+                      </strong>
+                      <span className="text-slate-700 leading-relaxed text-lg">
+                        {item.desc}
+                      </span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -114,6 +127,7 @@ export default function SummaryPage() {
           {/* --- SECTION 4: FINAL THOUGHT --- */}
           <FadeIn delay={0.8}>
             <div className="prose prose-lg prose-slate max-w-3xl mx-auto pb-24 text-slate-800 leading-relaxed border-t border-slate-200 pt-12">
+              <div className="prose prose-lg prose-slate max-w-3xl mx-auto prose-p:my-10">
               <h3 className="text-2xl font-bold text-slate-900 mb-6">Final Thought</h3>
               <p>
                 This project began with a family story—my grandfather's rage, my cousin's silence. Through data visualization, I've shown how that personal story connects to national patterns, how individual families' decisions aggregate into demographic catastrophe, and how the consequences of sex selection persist across decades.
@@ -124,6 +138,7 @@ export default function SummaryPage() {
               <p className="font-medium text-slate-900">
                 I hope that visualizing this crisis—making visible the invisible forces of culture, economics, and demographics—can help ensure it never happens again, in China or elsewhere. Because the numbers tell stories, and those stories matter.
               </p>
+            </div>
             </div>
           </FadeIn>
         </div>

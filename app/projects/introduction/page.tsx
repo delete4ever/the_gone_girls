@@ -8,7 +8,7 @@ export default function SummaryPage() {
       <div className="max-w-7xl mx-auto py-16 px-4 lg:px-8">
         
         <div className="max-w-3xl mx-auto pb-24">
-          <div className="prose prose-lg prose-slate max-w-3xl mx-auto space-y-8">
+          <div className="prose prose-lg prose-slate max-w-3xl mx-auto prose-p:my-10">
           
           <FadeIn>
             <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-10 leading-tight tracking-tight">
@@ -33,15 +33,15 @@ export default function SummaryPage() {
 
           {/* --- IMAGE INSERTION --- */}
           <FadeIn delay={0.2}>
-            <figure className="my-12">
-              <div className="rounded-xl overflow-hidden shadow-sm border border-stone-200">
-                <img 
-                  src="/images/slogan.jpg" 
-                  alt="Slogan on a wall in China" 
-                  className="w-full h-auto object-cover"
+            <figure className="my-12 flex flex-col items-center">
+              <div className="max-w-xl w-full mx-auto rounded-xl overflow-hidden shadow-sm border border-stone-200">
+                <img
+                  src="/images/slogan.jpg"
+                  alt="Slogan on a wall in China"
+                  className="w-full h-auto"
                 />
               </div>
-              <figcaption className="mt-4 p-4 bg-white border-l-4 border-rose-700 text-sm text-slate-600 shadow-sm rounded-r-lg">
+              <figcaption className="max-w-xl mx-auto mt-4 p-4 bg-white border-l-4 border-rose-700 text-sm text-slate-600 shadow-sm rounded-r-lg text-left">
                 <strong className="block text-slate-900 mb-1">Propaganda from the Early 2000s</strong>
                 This slogan, “Boys and girls are equally good — daughters are also carriers of the family line,” reflects government efforts to challenge traditional son-preference.
               </figcaption>

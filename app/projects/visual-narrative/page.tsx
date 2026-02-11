@@ -5,7 +5,6 @@ export default function SummaryPage() {
   return (
     <div className="bg-stone-50">
       <div className="w-full py-16 px-4 lg:px-8 space-y-32 pb-32">
-        
         {/* HEADER */}
         <header className="text-center max-w-3xl mx-auto mb-16">
           <FadeIn>
@@ -19,7 +18,7 @@ export default function SummaryPage() {
           </FadeIn>
         </header>
 
-      <div className="prose prose-lg prose-slate max-w-3xl mx-auto space-y-8">
+      <div className="prose prose-lg prose-slate max-w-3xl mx-auto prose-p:my-10">
         {/* --- CHAPTER 1 --- */}
         <section id="chapter-1" className="w-full flex flex-col items-center">
           <FadeIn>
@@ -41,10 +40,14 @@ export default function SummaryPage() {
             </div>
           </FadeIn>
 
-          {/* CHART: Trend */}
+          {/* --- CHART: Trend --- */}
           <FadeIn delay={0.2}>
-            <div className="w-full max-w-7xl mx-auto h-[600px] my-12 border border-stone-200 rounded-xl overflow-hidden shadow-sm bg-white">
-              <NotebookFrame src="/notebooks/trend.html" title="National Sex Ratio Trend" />
+            <div className="w-full max-w-[1400px] mx-auto my-12 border border-stone-200 rounded-xl overflow-hidden shadow-sm bg-white">            
+              <div className="overflow-x-auto scrollbar-thin scrollbar-thumb-slate-200">
+                <div className="min-w-[1000px] h-[600px]">
+                  <NotebookFrame src="/notebooks/trend.html" title="National Sex Ratio Trend" />
+                </div>
+              </div>
             </div>
           </FadeIn>
 
