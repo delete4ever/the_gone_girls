@@ -667,9 +667,9 @@ export default function SummaryPage() {
                 <div>
                   <p className="font-bold text-slate-800 mb-2 text-lg">Cluster 1: "Crisis Epicenter" (Upper-right-back corner)</p>
                   <ul className="list-disc pl-5 space-y-2">
-                    <li><strong>Location:</strong> High $Z$ ($2.0\text{-}3.0$), High $Y$ ($113\text{-}115$), High $X$ ($120\text{-}180$k)</li>
+                    <li><strong>Location:</strong> High Z, High Y, High X</li>
                     <li><strong>Provinces:</strong> Zhejiang, Fujian, Jiangxi</li>
-                    <li><strong>Sphere size/color:</strong> Medium (purple/magenta—GDP $\$40\text{k-}60\text{k}$)</li>
+                    <li><strong>Sphere size/color:</strong> Medium (purple/magenta—GDP)</li>
                     <li><strong>Interpretation:</strong> Strongest traditional culture + severe sex selection + crushing bride prices relative to income</li>
                     <li>These provinces face the worst marriage market crisis relative to economic capability</li>
                   </ul>
@@ -679,9 +679,9 @@ export default function SummaryPage() {
                 <div>
                   <p className="font-bold text-slate-800 mb-2 text-lg">Cluster 2: "Wealthy Traditional" (Mid-right-back)</p>
                   <ul className="list-disc pl-5 space-y-2">
-                    <li><strong>Location:</strong> Medium-high $Z$ ($1.5\text{-}2.0$), Medium-high $Y$ ($110\text{-}112$), Medium-high $X$ ($100\text{-}150$k)</li>
+                    <li><strong>Location:</strong> Medium-high Z, Medium-high Y, Medium-high X</li>
                     <li><strong>Provinces:</strong> Hunan, Hubei, Anhui</li>
-                    <li><strong>Sphere size/color:</strong> Large (yellow/orange—GDP $\$80\text{k-}100\text{k}$)</li>
+                    <li><strong>Sphere size/color:</strong> Large (yellow/orange—GDP)</li>
                     <li><strong>Interpretation:</strong> Traditional culture persisted through development $\rightarrow$ moderate sex selection $\rightarrow$ high bride prices (but affordable given wealth)</li>
                   </ul>
                 </div>
@@ -690,9 +690,9 @@ export default function SummaryPage() {
                 <div>
                   <p className="font-bold text-slate-800 mb-2 text-lg">Cluster 3: "Balanced Periphery" (Lower-left-front corner)</p>
                   <ul className="list-disc pl-5 space-y-2">
-                    <li><strong>Location:</strong> Very low $Z$ ($0\text{-}0.5$), Low $Y$ ($105\text{-}108$), Low $X$ ($20\text{-}50$k)</li>
+                    <li><strong>Location:</strong> Very low Z, Low Y, Low X</li>
                     <li><strong>Provinces:</strong> Tibet, Xinjiang, Qinghai</li>
-                    <li><strong>Sphere size/color:</strong> Small (purple—GDP $\$30\text{k-}40\text{k}$)</li>
+                    <li><strong>Sphere size/color:</strong> Small (purple—GDP )</li>
                     <li><strong>Interpretation:</strong> Different cultural systems $\rightarrow$ no sex selection $\rightarrow$ balanced marriage markets $\rightarrow$ minimal bride prices</li>
                     <li>Avoided the crisis entirely, regardless of low economic development</li>
                   </ul>
@@ -702,9 +702,9 @@ export default function SummaryPage() {
                 <div>
                   <p className="font-bold text-slate-800 mb-2 text-lg">Cluster 4: "Frontier Han" (Front-left, moderate elevation)</p>
                   <ul className="list-disc pl-5 space-y-2">
-                    <li><strong>Location:</strong> Low $Z$ ($0.4\text{-}0.7$), Low-medium $Y$ ($108\text{-}110$), Low-medium $X$ ($50\text{-}80$k)</li>
+                    <li><strong>Location:</strong> Low Z, Low-medium Y, Low-medium X</li>
                     <li><strong>Provinces:</strong> Liaoning, Jilin, Heilongjiang (Northeast)</li>
-                    <li><strong>Sphere size/color:</strong> Medium (light purple/blue—GDP $\$50\text{k-}60\text{k}$)</li>
+                    <li><strong>Sphere size/color:</strong> Medium (light purple/blue—GDP)</li>
                     <li><strong>Interpretation:</strong> Weak clan structures despite Han ethnicity $\rightarrow$ minimal sex selection $\rightarrow$ moderate bride prices</li>
                   </ul>
                 </div>
