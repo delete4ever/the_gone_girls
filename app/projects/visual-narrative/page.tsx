@@ -720,7 +720,7 @@ export default function SummaryPage() {
               {/* Summary Insight Box */}
               <div className="border-l-4 border-rose-700 pl-4 bg-rose-50 p-6 rounded mt-12 text-slate-800">
                 <p className="italic">
-                  <strong>Critical Insight:</strong> This single visualization captures the entire causal story: traditional culture ($Z$) $\rightarrow$ sex selection ($Y$) $\rightarrow$ marriage crisis ($X$), with wealth (size/color) as enabler but not driver. The 3D spatial separation of clusters shows these aren't random variations—they're structurally distinct demographic regimes determined by kinship systems.
+                  <strong>Critical Insight:</strong> This single visualization captures the entire causal story: traditional culture - sex selection - marriage crisis, with wealth (size/color) as enabler but not driver. The 3D spatial separation of clusters shows these aren't random variations—they're structurally distinct demographic regimes determined by kinship systems.
                 </p>
               </div>
             </div>
