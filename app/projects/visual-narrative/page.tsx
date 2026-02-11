@@ -141,7 +141,7 @@ export default function SummaryPage() {
         </section>
 
         {/* --- CHAPTER 2.1 --- */}
-        <section id="chapter-2-1" className="w-full flex flex-col items-center pt-32">
+        <section id="chapter-2-1" className="w-full flex flex-col items-center pt-20">
           <FadeIn>
             <div className="prose prose-lg prose-slate max-w-3xl mx-auto text-slate-700">
               <h2 className="text-2xl font-bold text-slate-900 mb-4">
@@ -437,7 +437,7 @@ export default function SummaryPage() {
         </section>
 
         {/* --- CHAPTER 3.1 --- */}
-        <section id="chapter-3-1" className="w-full flex flex-col items-center">
+        <section id="chapter-3-1" className="w-full flex flex-col items-center pt-20">
           <FadeIn>
             <div className="prose prose-lg prose-slate max-w-3xl mx-auto text-slate-700">
               <h2 className="text-2xl font-bold text-slate-900 mb-4">
@@ -570,6 +570,7 @@ export default function SummaryPage() {
                   </div>
                 </div>
 
+                <div className="bg-slate-50 p-6 rounded-lg border-l-4 border-slate-300 mb-6"></div>
                 <p className="font-bold text-slate-900 mb-2">Lightest (Lowest Clan Density 0-0.5):</p> {/* */}
                 <ul className="list-disc pl-5 space-y-1">
                   <li><strong>Tibet, Xinjiang:</strong> Entirely different cultural systems (Tibetan Buddhism, Islam)</li> {/* */}
@@ -577,6 +578,7 @@ export default function SummaryPage() {
                   <li><strong>Qinghai, Gansu:</strong> Mixed ethnic areas</li> {/* */}
                   <li><strong>Yunnan, Guizhou:</strong> Ethnic minority regions with diverse kinship traditions</li> {/* */}
                 </ul>
+              </div>
               </div>
 
               {/* Map 3 Context */}
@@ -669,58 +671,62 @@ export default function SummaryPage() {
             </div>
           </FadeIn>
 
-        {/* --- ANALYSIS: Key Clusters --- */}
+        {/* --- ANALYSIS: Key Clusters Grid --- */}
           <FadeIn delay={0.3}>
-            <div className="prose prose-lg prose-slate max-w-3xl mx-auto text-slate-700 mb-12">
-              <h3 className="text-xl font-bold text-slate-900 mb-6">Key Clusters:</h3>
+            <div className="max-w-4xl mx-auto mb-12">
+              <h3 className="text-xl font-bold text-slate-900 mb-8 border-l-4 border-rose-500 pl-4">
+                Key Clusters Analysis
+              </h3>
 
-              <div className="space-y-10">
-                {/* Cluster 1 */}
-                <div>
-                  <p className="font-bold text-slate-800 mb-2 text-lg">Cluster 1: "Crisis Epicenter" (Upper-right-back corner)</p>
-                  <ul className="list-disc pl-5 space-y-2">
-                    <li><strong>Location:</strong> High Z, High Y, High X</li>
-                    <li><strong>Provinces:</strong> Zhejiang, Fujian, Jiangxi</li>
-                    <li><strong>Sphere size/color:</strong> Medium (purple/magenta—GDP)</li>
-                    <li><strong>Interpretation:</strong> Strongest traditional culture + severe sex selection + crushing bride prices relative to income</li>
-                    <li>These provinces face the worst marriage market crisis relative to economic capability</li>
-                  </ul>
+              {/* 2x2 网格容器 */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                {/* Cluster 1: Crisis Epicenter */}
+                <div className="bg-rose-50/50 p-6 rounded-xl border-t-4 border-rose-400 shadow-sm hover:shadow-md transition-shadow">
+                  <span className="text-xs font-bold uppercase tracking-widest text-rose-600">Cluster 1</span>
+                  <h4 className="text-lg font-bold text-slate-800 mb-3">"Crisis Epicenter"</h4>
+                  <div className="text-sm space-y-2 text-slate-700">
+                    <p>📍 <span className="font-semibold text-rose-700">Location:</span> High Z, High Y, High X</p>
+                    <p>🗺️ <span className="font-semibold text-rose-700">Provinces:</span> Zhejiang, Fujian, Jiangxi</p>
+                    <p>💡 <span className="font-semibold text-rose-700">Insight:</span> Strongest traditional culture meeting high economic capability, leading to severe sex selection and crushing bride prices.</p>
+                  </div>
                 </div>
 
-                {/* Cluster 2 */}
-                <div>
-                  <p className="font-bold text-slate-800 mb-2 text-lg">Cluster 2: "Wealthy Traditional" (Mid-right-back)</p>
-                  <ul className="list-disc pl-5 space-y-2">
-                    <li><strong>Location:</strong> Medium-high Z, Medium-high Y, Medium-high X</li>
-                    <li><strong>Provinces:</strong> Hunan, Hubei, Anhui</li>
-                    <li><strong>Sphere size/color:</strong> Large (yellow/orange—GDP)</li>
-                    <li><strong>Interpretation:</strong> Traditional culture persisted through development - moderate sex selection - high bride prices (but affordable given wealth)</li>
-                  </ul>
+                {/* Cluster 2: Wealthy Traditional */}
+                <div className="bg-amber-50/50 p-6 rounded-xl border-t-4 border-amber-400 shadow-sm hover:shadow-md transition-shadow">
+                  <span className="text-xs font-bold uppercase tracking-widest text-amber-600">Cluster 2</span>
+                  <h4 className="text-lg font-bold text-slate-800 mb-3">"Wealthy Traditional"</h4>
+                  <div className="text-sm space-y-2 text-slate-700">
+                    <p>📍 <span className="font-semibold text-amber-700">Location:</span> Mid-high Z, Y, X</p>
+                    <p>🗺️ <span className="font-semibold text-amber-700">Provinces:</span> Hunan, Hubei, Anhui</p>
+                    <p>💡 <span className="font-semibold text-amber-700">Insight:</span> Traditional culture persisted through development. Moderate sex selection with high (but relatively affordable) bride prices.</p>
+                  </div>
                 </div>
 
-                {/* Cluster 3 */}
-                <div>
-                  <p className="font-bold text-slate-800 mb-2 text-lg">Cluster 3: "Balanced Periphery" (Lower-left-front corner)</p>
-                  <ul className="list-disc pl-5 space-y-2">
-                    <li><strong>Location:</strong> Very low Z, Low Y, Low X</li>
-                    <li><strong>Provinces:</strong> Tibet, Xinjiang, Qinghai</li>
-                    <li><strong>Sphere size/color:</strong> Small (purple—GDP )</li>
-                    <li><strong>Interpretation:</strong> Different cultural systems - less sex selection - balanced marriage markets - minimal bride prices</li>
-                    <li>Avoided the crisis entirely, regardless of low economic development</li>
-                  </ul>
+                {/* Cluster 3: Balanced Periphery */}
+                <div className="bg-indigo-50/50 p-6 rounded-xl border-t-4 border-indigo-400 shadow-sm hover:shadow-md transition-shadow">
+                  <span className="text-xs font-bold uppercase tracking-widest text-indigo-600">Cluster 3</span>
+                  <h4 className="text-lg font-bold text-slate-800 mb-3">"Balanced Periphery"</h4>
+                  <div className="text-sm space-y-2 text-slate-700">
+                    <p>📍 <span className="font-semibold text-indigo-700">Location:</span> Very low Z, Low Y, X</p>
+                    <p>🗺️ <span className="font-semibold text-indigo-700">Provinces:</span> Tibet, Xinjiang, Qinghai</p>
+                    <p>💡 <span className="font-semibold text-indigo-700">Insight:</span> Different cultural systems led to balanced marriage markets and minimal bride prices, regardless of economic level.</p>
+                  </div>
                 </div>
 
-                {/* Cluster 4 */}
-                <div>
-                  <p className="font-bold text-slate-800 mb-2 text-lg">Cluster 4: "Frontier Han" (Front-left, moderate elevation)</p>
-                  <ul className="list-disc pl-5 space-y-2">
-                    <li><strong>Location:</strong> Low Z, Low-medium Y, Low-medium X</li>
-                    <li><strong>Provinces:</strong> Liaoning, Jilin, Heilongjiang (Northeast)</li>
-                    <li><strong>Sphere size/color:</strong> Medium (light purple/blue—GDP)</li>
-                    <li><strong>Interpretation:</strong> Weak clan structures despite Han ethnicity - minimal sex selection - moderate bride prices</li>
-                  </ul>
+                {/* Cluster 4: Frontier Han */}
+                <div className="bg-sky-50/50 p-6 rounded-xl border-t-4 border-sky-400 shadow-sm hover:shadow-md transition-shadow">
+                  <span className="text-xs font-bold uppercase tracking-widest text-sky-600">Cluster 4</span>
+                  <h4 className="text-lg font-bold text-slate-800 mb-3">"Frontier Han"</h4>
+                  <div className="text-sm space-y-2 text-slate-700">
+                    <p>📍 <span className="font-semibold text-sky-700">Location:</span> Low Z, Low-medium Y, X</p>
+                    <p>🗺️ <span className="font-semibold text-sky-700">Provinces:</span> Liaoning, Jilin, Heilongjiang</p>
+                    <p>💡 <span className="font-semibold text-sky-700">Insight:</span> Weak clan structures despite Han ethnicity. Minimal sex selection and moderate bride prices in these frontier regions.</p>
+                  </div>
                 </div>
+
               </div>
+            </div>
 
               {/* Summary Insight Box */}
               <div className="border-l-4 border-rose-700 pl-4 bg-rose-50 p-6 rounded mt-12 text-slate-800">
