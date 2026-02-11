@@ -386,7 +386,9 @@ export default function SummaryPage() {
                   <li><strong>2000-2010:</strong> Peak period, all regions reach maximum</li>
                   <li><strong>2010-2020:</strong> All bars decline proportionally—universal correction</li>
                 </ul>
-              </FadeIn>
+              </div>
+            </div>
+            </FadeIn>
 
               {/* --- FINAL INSIGHT: Regional Dynamics --- */}
               <FadeIn delay={0.4}>
