@@ -747,6 +747,7 @@ export default function SummaryPage() {
                 </p>
               </div>
             </div>
+          </div>
           </FadeIn>
           </section>
 
