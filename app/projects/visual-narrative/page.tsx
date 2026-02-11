@@ -44,15 +44,16 @@ export default function SummaryPage() {
 
           {/* --- CHART: Trend --- */}
           <FadeIn delay={0.2}>
-            <div className="w-full max-w-[1400px] mx-auto my-12 border border-stone-200 rounded-xl overflow-hidden shadow-sm bg-white">            
-              <div className="overflow-x-auto scrollbar-thin scrollbar-thumb-slate-200">
-                <div className="min-w-[1000px] h-[600px]">
-                  <NotebookFrame src="/notebooks/trend.html" title="National Sex Ratio Trend" />
-                </div>
+            <div className="w-full max-w-[1400px] mx-auto my-12 border border-stone-200 rounded-xl overflow-hidden shadow-sm bg-white">
+              <div className="w-full h-[500px] md:h-[600px]">
+                <NotebookFrame 
+                  src="/notebooks/trend.html" 
+                  title="National Sex Ratio Trend" 
+                  className="w-full h-full border-none" 
+                />
               </div>
             </div>
           </FadeIn>
-
 
           <FadeIn>
            {/* --- CHAPTER 1: TIMELINE ANALYSIS --- */}
