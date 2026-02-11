@@ -34,6 +34,7 @@ export default function SummaryPage() {
               <p>
                 When my grandfather feared that "the Yang family line would end" with the birth of a granddaughter, he expressed a concern shared by millions of Chinese families nationwide. But his individual anxiety, when multiplied across an entire nation, created something unprecedented in human history: a systematic demographic imbalance that would reshape Chinese society for generations.
               </p>
+
               <p>
                 This visualization maps how that transformation happened—not through abstract policy analysis, but through the actual numbers: the sex ratios recorded at every birth, tracked across every year, revealing the moment when China's demographic balance tipped into crisis.
               </p>
@@ -111,7 +112,7 @@ export default function SummaryPage() {
         </section>
 
         {/* --- CHAPTER 2 --- */}
-        <section id="chapter-2" className="w-full flex flex-col items-center">
+        <section id="chapter-2" className="w-full flex flex-col items-center pt-24 border-t border-stone-200">
           <FadeIn>
             <div className="prose prose-lg prose-slate max-w-3xl mx-auto text-slate-700">
               <span className="text-rose-700 font-mono text-sm uppercase tracking-wider font-bold block mb-2">
@@ -124,9 +125,11 @@ export default function SummaryPage() {
               <p>
                 When my grandfather raged about the Yang family line potentially ending, he was standing in Hubei Province, in central-south China. But what if our family had lived in Tibet? Or Xinjiang? Or the Northeast? Would his reaction have been the same?
               </p>
+
               <p>
                 The data reveal a striking truth: China's sex ratio crisis was never nationally uniform. Instead, it concentrated in specific geographic regions while largely sparing others. The map of sex selection in China is also a map of cultural geography, economic development, and traditional kinship structures.
               </p>
+
               <p>
                 This chapter visualizes geography—showing not only which provinces had the worst imbalances, but also how the crisis emerged, spread, peaked, and persisted across space and time.
               </p>
@@ -135,11 +138,11 @@ export default function SummaryPage() {
         </section>
 
         {/* --- CHAPTER 2.1 --- */}
-        <section id="chapter-2-1" className="w-full flex flex-col items-center">
+        <section id="chapter-2-1" className="w-full flex flex-col items-center pt-32">
           <FadeIn>
             <div className="prose prose-lg prose-slate max-w-3xl mx-auto text-slate-700">
               <h2 className="text-2xl font-bold text-slate-900 mb-4">
-                2.1 The Heat of Imbalance:: Seeing Patterns Across Time and Space
+                2.1 The Heat of Imbalance: Seeing Patterns Across Time and Space
               </h2>
               <p>
                 A heatmap matrix with provinces as rows, census years (1982, 1990, 2000, 2005, 2010, 2015, 2020) as columns. Color intensity represents SRB severity—darkest colors (deep red) indicate ratios of 130-135, lightest (blue) indicate 102-107.
@@ -218,7 +221,7 @@ export default function SummaryPage() {
         </section>
 
         {/* --- CHAPTER 2.2 --- */}
-        <section id="chapter-2-2" className="w-full flex flex-col items-center">
+        <section id="chapter-2-2" className="w-full flex flex-col items-center pt-32">
           <FadeIn>
             <div className="prose prose-lg prose-slate max-w-3xl mx-auto text-slate-700">
               <h2 className="text-2xl font-bold text-slate-900 mb-4">
@@ -416,9 +419,11 @@ export default function SummaryPage() {
               <p>
                 My grandfather's fury about the Yang family line ending wasn't a personal quirk—it was the expression of a cultural system that had shaped our family for generations. The Yang family genealogy book (族谱), carefully maintained and updated, traced our patrilineal descent through centuries. Our ancestral graves required male descendants to perform ritual worship. Our family property would pass through the male line.
               </p>
+
               <p>
                But why did this cultural system have such a strong hold in some regions of China and not others? And why didn't economic development—rising education, urbanization, women's labor force participation—eliminate these traditional preferences as modernization theory predicts?
               </p>
+              
               <p>
                 This chapter examines the paradoxes: why wealthy regions showed severe imbalances, how traditional culture proved more potent than economic incentives, and how we can measure and visualize the consequences of this cultural persistence.
               </p>
@@ -684,7 +689,7 @@ export default function SummaryPage() {
                     <li><strong>Location:</strong> Medium-high Z, Medium-high Y, Medium-high X</li>
                     <li><strong>Provinces:</strong> Hunan, Hubei, Anhui</li>
                     <li><strong>Sphere size/color:</strong> Large (yellow/orange—GDP)</li>
-                    <li><strong>Interpretation:</strong> Traditional culture persisted through development $\rightarrow$ moderate sex selection $\rightarrow$ high bride prices (but affordable given wealth)</li>
+                    <li><strong>Interpretation:</strong> Traditional culture persisted through development - moderate sex selection - high bride prices (but affordable given wealth)</li>
                   </ul>
                 </div>
 
@@ -695,7 +700,7 @@ export default function SummaryPage() {
                     <li><strong>Location:</strong> Very low Z, Low Y, Low X</li>
                     <li><strong>Provinces:</strong> Tibet, Xinjiang, Qinghai</li>
                     <li><strong>Sphere size/color:</strong> Small (purple—GDP )</li>
-                    <li><strong>Interpretation:</strong> Different cultural systems $\rightarrow$ no sex selection $\rightarrow$ balanced marriage markets $\rightarrow$ minimal bride prices</li>
+                    <li><strong>Interpretation:</strong> Different cultural systems - less sex selection - balanced marriage markets - minimal bride prices</li>
                     <li>Avoided the crisis entirely, regardless of low economic development</li>
                   </ul>
                 </div>
@@ -707,7 +712,7 @@ export default function SummaryPage() {
                     <li><strong>Location:</strong> Low Z, Low-medium Y, Low-medium X</li>
                     <li><strong>Provinces:</strong> Liaoning, Jilin, Heilongjiang (Northeast)</li>
                     <li><strong>Sphere size/color:</strong> Medium (light purple/blue—GDP)</li>
-                    <li><strong>Interpretation:</strong> Weak clan structures despite Han ethnicity $\rightarrow$ minimal sex selection $\rightarrow$ moderate bride prices</li>
+                    <li><strong>Interpretation:</strong> Weak clan structures despite Han ethnicity - minimal sex selection - moderate bride prices</li>
                   </ul>
                 </div>
               </div>
