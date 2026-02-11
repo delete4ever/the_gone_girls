@@ -52,10 +52,13 @@ export default function SummaryPage() {
               {/* From Family to Nation */}
               <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6">From Family to Nation</h2>
               <p>
-                These are not unusual stories in China—they are utterly ordinary. Across millions of families over four decades, similar scenes played out: the desperate desire for a son, the secret ultrasound appointments, and the unequal distribution of family resources.
+                These are not unusual stories in China—they are utterly ordinary. Across millions of families over four decades, similar scenes played out: the desperate desire for a son, the secret ultrasound appointments, the quiet abortions when the fetus was female, the unequal distribution of family resources and affection based on a child's sex.
               </p>
               <p>
-                The collective result of these individual family dramas is one of the most severe demographic crises in modern history: China's sex ratio at birth (SRB) imbalance and the disappearance of an estimated 30-40 million women who were never born.
+                My family's story is a single thread in a massive demographic tapestry. While my grandfather raged about the Yang family line potentially ending, hundreds of millions of other families were making similar calculations, taking similar actions. The collective result of these individual family dramas is one of the most severe demographic crises in modern history: <b>China's sex ratio at birth (SRB) imbalance and the disappearance of an estimated 30-40 million women who were never born</b>.
+              </p>
+              <p>
+                The numbers are staggering. In nature, approximately 105 boys are born for every 100 girls—a slight biological constant that has held across virtually all human populations throughout history. But in China during the 2000s, the national sex ratio at birth reached 121 boys per 100 girls. In some provinces, it exceeded 130. For second and third children in families without sons, the ratios soared even higher—sometimes reaching 150 or 200.
               </p>
             </div>
           </FadeIn>
@@ -65,7 +68,10 @@ export default function SummaryPage() {
               {/* Research Motivation */}
               <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6">Research Motivation</h2>
               <p>
-                This project is both profoundly personal and rigorously analytical. I want to understand not just that China has a sex ratio problem—that much is well documented—but where, when, why, and how this crisis emerged and evolved.
+                This project is both profoundly personal and rigorously analytical. I want to understand not just that China has a sex ratio problem—that much is well documented—but <b>where, when, why, and how this crisis emerged and evolved</b>.
+              </p>
+              <p>
+                The data tells stories that individual families cannot see. While my grandfather worried about the Yang family line in one small city, what was happening across China's 31 provinces? Were all regions equally affected, or did the crisis concentrate in certain areas? If so, why? What role did economics play versus culture? How did families behave when faced with multiple daughters—did they accept it, or did they select the sex of subsequent children until achieving a son? And what are the consequences now that those cohorts with skewed sex ratios have reached adulthood?
               </p>
               
               {/* Core Research Questions */}
@@ -82,7 +88,7 @@ export default function SummaryPage() {
                     <strong>Economic vs. cultural drivers:</strong> Is it poverty, wealth, or something deeper rooted in kinship structures?
                   </li>
                   <li>
-                    <strong>Behavioral patterns:</strong> Did families with daughters continue selecting until achieving a son?
+                    <strong>Behavioral patterns:</strong> How did son preference manifest across birth orders? Did families with daughters continue selecting until achieving a son?
                   </li>
                 </ul>
               </div>

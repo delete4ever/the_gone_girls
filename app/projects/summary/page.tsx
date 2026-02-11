@@ -16,102 +16,119 @@ export default function SummaryPage() {
                 Lessons from Four Decades of Missing Daughters
               </h1>
               <p className="text-xl text-slate-700 leading-relaxed">
-                This visual journey through four decades of data has revealed that the sex ratio crisis was not an accidental byproduct of policy, but a deliberate cultural choice facilitated by technology.
+                This visual journey through four decades of data has revealed:
               </p>
             </div>
           </FadeIn>
 
-          <div className="space-y-16 text-slate-700 leading-relaxed">
+          {/* --- SECTION 1: KEY LESSONS --- */}
+          <FadeIn delay={0.2}>
+            <div className="prose prose-lg prose-slate max-w-3xl mx-auto text-slate-700 mb-20">
+              <ol className="space-y-6 list-none pl-0">
+                {[
+                  "The crisis was not uniform but concentrated in specific regions—the traditional Han Chinese heartland of central and eastern China",
+                  "The crisis was not driven by poverty but emerged most severely in regions with both traditional son preference AND economic capability to access sex-selective technology",
+                  "The cultural foundation—measured through clan density—predicts which regions experienced severe imbalances better than economics or education alone",
+                  "The behavioral pattern—escalating sex selection across birth orders—reveals that families seek at least one son, not exclusively sons",
+                  "The recent decline is real, but the geographic pattern persists, suggesting cultural change is slow even as policy and technology evolve"
+                ].map((text, i) => (
+                  <li key={i} className="flex items-start">
+                    <span className="flex-shrink-0 w-8 h-8 bg-slate-900 text-white rounded-full flex items-center justify-center font-bold text-sm mr-4 mt-1">
+                      {i + 1}
+                    </span>
+                    <span className="leading-relaxed">{text}</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </FadeIn>
 
-            {/* Section 1: Key Findings */}
-            <FadeIn delay={0.1}>
-              <section>
-                <h2 className="text-3xl font-bold text-slate-900 mb-6">Key Findings</h2>
-                <p className="mb-6">
-                  Our multidimensional analysis challenges the common assumption that poverty drives demographic imbalance. Instead, the data suggests a more complex interaction between culture and modernization:
-                </p>
-                <ul className="list-disc pl-5 space-y-3 marker:text-rose-700">
-                  <li>
-                    <strong>Culture over Wealth:</strong> The crisis emerged most severely in regions with deep-rooted clan structures (like Fujian and Jiangxi), regardless of their GDP. Wealth did not erase son preference; it often enabled it by providing access to medical technology.
+          {/* --- SECTION 2: ENDURING CONSEQUENCES --- */}
+          <FadeIn delay={0.4}>
+            <div className="prose prose-lg prose-slate max-w-3xl mx-auto mb-20">
+              <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+                <h3 className="text-2xl font-bold text-slate-900 mt-0 mb-6">The Enduring Consequences</h3>
+                <p className="mb-6">China now lives with the demographic legacy:</p>
+                <ul className="space-y-4">
+                  <li className="flex items-start">
+                    <span className="text-rose-600 mr-3">•</span>
+                    <strong>Approximately 30-40 million "surplus men"</strong> in cohorts born 1985-2010, creating a severe marriage squeeze
                   </li>
-                  <li>
-                    <strong>The "Stopping Rule":</strong> The escalation of sex ratios from the first child to the third child reveals a specific behavioral pattern: families do not exclusively want sons, but they refuse to stop having children without one.
+                  <li className="flex items-start">
+                    <span className="text-rose-600 mr-3">•</span>
+                    <strong>Rising bride prices</strong> as scarce women command higher marriage payments, particularly in rural areas
                   </li>
-                  <li>
-                    <strong>A Persistent Hierarchy:</strong> While absolute sex ratios have declined since 2010, the relative ranking of provinces has remained stable for 40 years. This geographic persistence indicates that cultural topography is harder to flatten than economic topography.
+                  <li className="flex items-start">
+                    <span className="text-rose-600 mr-3">•</span>
+                    <strong>Cross-border marriage migration</strong> as Chinese men seek brides from Vietnam, Myanmar, Laos—sometimes through trafficking
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-rose-600 mr-3">•</span>
+                    <strong>Delayed and foregone marriage</strong> as millions of men, inferior and rural, face permanent bachelorhood
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-rose-600 mr-3">•</span>
+                    <strong>Social stability concerns</strong> around large populations of unmarried men (the "bare branches" phenomenon)
                   </li>
                 </ul>
-              </section>
-            </FadeIn>
+              </div>
+            </div>
+          </FadeIn>
 
-            {/* Section 2: Consequences */}
-            <FadeIn delay={0.2}>
-              <section>
-                <h2 className="text-3xl font-bold text-slate-900 mb-6">The Enduring Consequences</h2>
-                <p className="mb-6">
-                  China now lives with the legacy of decisions made decades ago. The "surplus men" born between 1985 and 2010 are now entering a marriage market that mathematically cannot accommodate them.
-                </p>
-                <ul className="list-disc pl-5 space-y-3 marker:text-rose-700">
-                  <li>
-                    <strong>The Marriage Squeeze:</strong> An estimated 30-40 million men face permanent bachelorhood, creating a phenomenon known as "bare branches" (guanggun).
-                  </li>
-                  <li>
-                    <strong>Economic Distortion:</strong> Bride prices (Caili) have skyrocketed, particularly in rural areas, transforming marriage into a significant economic transaction and transfer of wealth.
-                  </li>
-                  <li>
-                    <strong>Migration & Trafficking:</strong> The scarcity of women has triggered cross-border marriage migration from neighboring countries and increased risks of trafficking.
-                  </li>
+          {/* --- SECTION 3: POLICY IMPLICATIONS --- */}
+          <FadeIn delay={0.6}>
+            <div className="prose prose-lg prose-slate max-w-3xl mx-auto mb-20">
+              <h3 className="text-2xl font-bold text-slate-900 mb-6">Policy Implications</h3>
+              <p className="mb-8">China's policy reversals—from One-Child to Two-Child to Three-Child—show recognition of the crisis. But:</p>
+
+              <div className="grid md:grid-cols-2 gap-8 mb-10">
+                <div className="bg-slate-50 p-6 rounded-lg border-t-4 border-slate-400">
+                  <p className="font-bold text-slate-900 mb-4 uppercase text-xs tracking-widest">Policy alone didn't create it:</p>
+                  <ul className="text-sm space-y-2 pl-4 list-disc">
+                    <li>Required culture (son preference) + policy (birth limits) + technology (ultrasound)</li>
+                    <li>Regions without strong son preference (Tibet, Northeast) didn't develop severe imbalances despite the same policy</li>
+                  </ul>
+                </div>
+                <div className="bg-slate-50 p-6 rounded-lg border-t-4 border-slate-800">
+                  <p className="font-bold text-slate-900 mb-4 uppercase text-xs tracking-widest">Policy alone won't solve it:</p>
+                  <ul className="text-sm space-y-2 pl-4 list-disc">
+                    <li>Must address cultural foundations: inheritance laws, elder care systems, ritual practices</li>
+                    <li>Women's empowerment: economic independence</li>
+                    <li>Legal enforcement: crackdowns on illegal sex determination</li>
+                    <li>Social security: public pensions reducing dependence on sons</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="border-l-4 border-rose-700 pl-6 italic bg-rose-50 p-6 rounded text-slate-800">
+                <p className="font-bold mb-2">The bride price inflation is a symptom, not a disease:</p>
+                <ul className="list-disc pl-5 text-sm space-y-1">
+                  <li>Capping 彩礼 doesn't create more brides</li>
+                  <li>Competition shifts to other dimensions (housing, education, appearance)</li>
+                  <li>The only solution is time—waiting for distorted cohorts to age out</li>
                 </ul>
-              </section>
-            </FadeIn>
+              </div>
+            </div>
+          </FadeIn>
 
-            {/* Section 3: Policy Implications */}
-            <FadeIn delay={0.3}>
-              <section>
-                <h2 className="text-3xl font-bold text-slate-900 mb-6">Policy Implications</h2>
-                <p className="mb-6">
-                  China's shift to a "Three-Child Policy" is a necessary step, but demographic momentum is difficult to reverse. The data suggests that simply allowing more children is insufficient to correct imbalances in "hard core" traditional regions.
-                </p>
-                <div className="space-y-6">
-                  <div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-2">Beyond Birth Limits</h3>
-                    <p>
-                      Policy was a constraint, but culture was the driver. Solutions must address the root cultural causes: inheritance practices, elder care systems that rely on sons, and patrilineal traditions.
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-2">Supporting Women</h3>
-                    <p>
-                      True balance will only come when daughters are viewed as having equal economic and social potential as sons. This requires enforcing equal employment rights and ensuring that daughters can support aging parents just as effectively as sons.
-                    </p>
-                  </div>
-                </div>
-              </section>
-            </FadeIn>
-
-            <hr className="border-stone-200 my-12" />
-
-            {/* Section 4: Final Thought */}
-            <FadeIn delay={0.4}>
-              <section className="bg-stone-100 p-8 rounded-xl border-l-4 border-rose-700">
-                <h2 className="text-xl font-bold text-slate-900 mb-4 font-mono uppercase tracking-wider text-rose-700">
-                  Final Thought
-                </h2>
-                <p className="mb-4 text-slate-800 font-medium">
-                  This project began with a family story—my grandfather's rage, my cousin's silence. Through data visualization, I've shown how that personal story connects to national patterns.
-                </p>
-                <p className="italic text-slate-600">
-                  "I hope that visualizing this crisis—making visible the invisible forces of culture, economics, and demographics—can help ensure it never happens again, in China or elsewhere. Because the numbers tell stories, and those stories matter."
-                </p>
-                <div className="mt-6 pt-6 border-t border-stone-200 text-sm font-bold text-slate-900">
-                  Ludi Yang &bull; University of Bologna
-                </div>
-              </section>
-            </FadeIn>
+          {/* --- SECTION 4: FINAL THOUGHT --- */}
+          <FadeIn delay={0.8}>
+            <div className="prose prose-lg prose-slate max-w-3xl mx-auto pb-24 text-slate-800 leading-relaxed border-t border-slate-200 pt-12">
+              <h3 className="text-2xl font-bold text-slate-900 mb-6">Final Thought</h3>
+              <p>
+                This project began with a family story—my grandfather's rage, my cousin's silence. Through data visualization, I've shown how that personal story connects to national patterns, how individual families' decisions aggregate into demographic catastrophe, and how the consequences of sex selection persist across decades.
+              </p>
+              <p>
+                But ultimately, this isn't just about data—it's about the millions of daughters who were never born, the millions of sons who can't find wives, the millions of families living with the consequences of prioritizing one sex over the other.
+              </p>
+              <p className="font-medium text-slate-900">
+                I hope that visualizing this crisis—making visible the invisible forces of culture, economics, and demographics—can help ensure it never happens again, in China or elsewhere. Because the numbers tell stories, and those stories matter.
+              </p>
+            </div>
+          </FadeIn>
+        </div>
 
           </div>
-        </div>
-      </div>
     </div>
   );
 }
