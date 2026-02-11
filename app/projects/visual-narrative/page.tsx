@@ -583,7 +583,7 @@ export default function SummaryPage() {
                   </div>
                 </div>
 
-                <div className="bg-slate-50 p-6 rounded-lg border-l-4 border-slate-300 mb-6"></div>
+                <div className="bg-slate-50 p-6 rounded-lg border-l-4 border-slate-300 mb-6">
                 <p className="font-bold text-slate-900 mb-2">Lightest (Lowest Clan Density 0-0.5):</p> {/* */}
                 <ul className="list-disc pl-5 space-y-1">
                   <li><strong>Tibet, Xinjiang:</strong> Entirely different cultural systems (Tibetan Buddhism, Islam)</li> {/* */}
@@ -644,8 +644,6 @@ export default function SummaryPage() {
                   </div>
                 </div>
               </div>
-
-            </div>
           </FadeIn>
         </section>
 
