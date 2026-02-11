@@ -18,7 +18,7 @@ export default function SummaryPage() {
           </FadeIn>
         </header>
 
-      <div className="prose prose-lg prose-slate max-w-3xl mx-auto prose-p:my-10">
+      <div className="prose prose-lg prose-slate prose-p:my-10">
         {/* --- CHAPTER 1 --- */}
         <section id="chapter-1" className="w-full flex flex-col items-center">
           <FadeIn>
@@ -30,7 +30,7 @@ export default function SummaryPage() {
               <h3 className="text-xl font-medium text-slate-500 italic mb-6">
                 "From Balance to Crisis: Four Decades of Demographic Distortion"
               </h3>
-              <div className="prose prose-lg prose-slate text-slate-700 leading-relaxed space-y-8">
+              <div className="prose prose-lg prose-slate text-slate-700 leading-relaxed space-y-8 max-w-3xl mx-auto">
               <p>
                 When my grandfather feared that "the Yang family line would end" with the birth of a granddaughter, he expressed a concern shared by millions of Chinese families nationwide. But his individual anxiety, when multiplied across an entire nation, created something unprecedented in human history: a systematic demographic imbalance that would reshape Chinese society for generations.
               </p>
@@ -56,13 +56,13 @@ export default function SummaryPage() {
 
           <FadeIn>
            {/* --- CHAPTER 1: TIMELINE ANALYSIS --- */}
-            <div className="max-w-3xl mx-auto py-12 px-4">
+            <div className="max-w-3xl mx-auto py-12 px-4 max-w-3xl mx-auto">
               <h3 className="text-2xl font-bold text-slate-900 mb-10 flex items-center">
                 <span className="bg-rose-500 w-2 h-8 mr-4 rounded-full"></span>
                 Key Observations: The 50-Year Trajectory
               </h3>
 
-              <div className="relative border-l-2 border-slate-200 ml-4 space-y-12">
+              <div className="relative border-l-2 border-slate-200 ml-4 space-y-12 max-w-3xl mx-auto">
                 
                 {/* Phase 1: Stability */}
                 <div className="relative pl-8">
